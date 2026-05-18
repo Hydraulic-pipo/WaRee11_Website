@@ -31,5 +31,5 @@ assets/
 The website will be available at:
 
 ```text
-https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-NAME/
+[https://hydraulic-pipo.github.io/WaRee11_Website/]
 ```
