@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WaRee11 | Modern River Simulation & Hydraulic Modeling for iPad</title>
+  <meta
+    name="description"
+    content="WaRee11 is an iPadOS river simulation and hydraulic modeling platform for engineers, researchers, and students building intuitive 1D river analysis workflows."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="WaRee11 home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/app-icon.jpeg" alt="" class="brand-icon" />
+          </span>
+          <span class="brand-copy">
+            <strong>WaRee11</strong>
+            <span>Hydraulic Modeling for iPadOS</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#collaboration">Collaboration</a>
+          <a href="#contact">Contact</a>
+          <a class="button button-primary nav-cta" href="#contact">Join TestFlight</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">iPadOS-first hydraulic workflow</p>
+            <h1>Modern River Simulation &amp; Hydraulic Modeling for iPad</h1>
+            <p class="hero-lead">
+              WaRee11 helps engineers, researchers, and students build, visualize,
+              and analyze 1D river simulation models with an intuitive iPadOS workflow.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">Join TestFlight</a>
+              <a class="button button-secondary" href="#features">View Features</a>
+            </div>
+            <ul class="hero-points" aria-label="WaRee11 highlights">
+              <li>Built for project setup, geometry editing, and results review on iPad</li>
+              <li>Designed for engineering teams, universities, and research collaboration</li>
+              <li>Prepared for TestFlight rollout, App Store readiness, and product presentation</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="WaRee11 product preview">
+            <div class="ipad-stage">
+              <div class="device-card device-main">
+                <img src="assets/hero-ipad.jpeg" alt="WaRee11 app preview on iPad" />
+              </div>
+              <div class="device-card floating-card floating-top">
+                <p>River Network Builder</p>
+                <strong>Visual model setup</strong>
+              </div>
+              <div class="device-card floating-card floating-bottom">
+                <p>Results Visualization</p>
+                <strong>Profiles, diagnostics, and scenario review</strong>
+              </div>
+              <div class="glow-ring glow-ring-a" aria-hidden="true"></div>
+              <div class="glow-ring glow-ring-b" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission section-pad">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">Why WaRee11</p>
+            <h2>Traditional river modeling is powerful, but often desktop-bound and difficult to teach.</h2>
+            <p>
+              WaRee11 brings a more visual, portable, and education-friendly workflow to iPadOS,
+              making hydraulic modeling easier to explain, review, and iterate across classrooms,
+              engineering teams, and research environments.
+            </p>
+          </div>
+
+          <div class="mission-grid">
+            <article class="mission-card">
+              <span class="card-kicker">Problem</span>
+              <h3>Desktop tools can slow down exploration</h3>
+              <p>
+                Traditional workflows often separate model setup, geometry editing, and results review
+                into systems that are efficient for experts but harder for students, collaborators,
+                and mobile-first teams to approach quickly.
+              </p>
+            </article>
+            <article class="mission-card accent-card">
+              <span class="card-kicker">Mission</span>
+              <h3>A cleaner hydraulic workflow for learning and field-ready review</h3>
+              <p>
+                WaRee11 is shaped around touch-friendly modeling, clear visual hierarchy, and an
+                intuitive sequence from project creation to hydraulic interpretation on iPad.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="ipad-preview" class="section-pad preview-section">
+        <div class="container">
+          <div class="preview-grid">
+            <div class="preview-copy">
+              <p class="eyebrow">Interactive preview</p>
+              <h2>Explore WaRee11 on iPad</h2>
+              <p class="preview-lead">
+                Swipe through the core modeling workflow — from project overview to river network editing, cross-section setup, simulation readiness, and results visualization.
+              </p>
+
+              <div class="preview-detail" aria-live="polite">
+                <p class="preview-meta">Current screen</p>
+                <h3 id="preview-title">Project Dashboard</h3>
+                <p id="preview-description">
+                  Review project readiness, model health, recent runs, and the overall hydraulic modeling workflow.
+                </p>
+              </div>
+
+              <div class="preview-tabs" role="tablist" aria-label="WaRee11 screen selector">
+                <button
+                  class="preview-tab is-active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="preview-stage"
+                  data-preview-index="0"
+                >
+                  Dashboard
+                </button>
+                <button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="preview-stage"
+                  data-preview-index="1"
+                >
+                  River Network
+                </button>
+                <button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="preview-stage"
+                  data-preview-index="2"
+                >
+                  Cross Sections
+                </button>
+                <button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="preview-stage"
+                  data-preview-index="3"
+                >
+                  Simulation Settings
+                </button>
+                <button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="preview-stage"
+                  data-preview-index="4"
+                >
+                  Results
+                </button>
+              </div>
+            </div>
+
+            <div class="preview-stage-wrap">
+              <div class="preview-stage" id="preview-stage">
+                <button class="preview-arrow preview-arrow-prev" type="button" aria-label="Show previous screen">
+                  <span aria-hidden="true">&#8592;</span>
+                </button>
+
+                <div class="preview-device" aria-label="Interactive WaRee11 iPad preview">
+                  <div class="preview-device-top" aria-hidden="true">
+                    <span class="preview-camera"></span>
+                  </div>
+                  <div class="preview-screen-shell">
+                    <img
+                      id="preview-image"
+                      class="preview-screen-image"
+                      src="assets/dashboard.jpeg"
+                      alt="WaRee11 Project Dashboard screen"
+                    />
+                  </div>
+                </div>
+
+                <button class="preview-arrow preview-arrow-next" type="button" aria-label="Show next screen">
+                  <span aria-hidden="true">&#8594;</span>
+                </button>
+              </div>
+
+              <div class="preview-pagination" aria-label="WaRee11 screen pagination">
+                <button class="preview-dot is-active" type="button" aria-label="Go to Dashboard" data-preview-index="0"></button>
+                <button class="preview-dot" type="button" aria-label="Go to River Network" data-preview-index="1"></button>
+                <button class="preview-dot" type="button" aria-label="Go to Cross Sections" data-preview-index="2"></button>
+                <button class="preview-dot" type="button" aria-label="Go to Simulation Settings" data-preview-index="3"></button>
+                <button class="preview-dot" type="button" aria-label="Go to Results" data-preview-index="4"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section-pad">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">Core platform</p>
+            <h2>Feature cards built around the full river-modeling lifecycle</h2>
+            <p>
+              Every screen is presented as part of one connected modeling experience, from
+              river geometry definition to numerical setup and results diagnostics.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-card-wide">
+              <div class="feature-copy">
+                <span class="card-kicker">01</span>
+                <h3>River Network Builder</h3>
+                <p>
+                  Define reaches, links, nodes, and project structure with a clear visual
+                  river network workflow designed for touch interaction and quick iteration.
+                </p>
+              </div>
+              <img src="assets/river-network.jpeg" alt="WaRee11 river network builder screen" />
+            </article>
+
+            <article class="feature-card">
+              <span class="card-kicker">02</span>
+              <h3>Cross Section Editor</h3>
+              <p>
+                Build and refine channel geometry, roughness, and section properties in a format
+                that supports teaching, verification, and rapid model inspection.
+              </p>
+              <img src="assets/cross-section.jpeg" alt="WaRee11 cross section editor screen" />
+            </article>
+
+            <article class="feature-card">
+              <span class="card-kicker">03</span>
+              <h3>Simulation Settings</h3>
+              <p>
+                Configure hydraulic runs with time step controls, duration, solver-related setup,
+                and project parameters in one coherent panel.
+              </p>
+              <img src="assets/simulation-settings.jpeg" alt="WaRee11 simulation settings screen" />
+            </article>
+
+            <article class="feature-card">
+              <span class="card-kicker">04</span>
+              <h3>Hydraulic Solver Engine</h3>
+              <p>
+                Support structured computation flows for 1D river simulation, creating a strong
+                foundation for stable modeling and future solver refinement.
+              </p>
+              <div class="mini-diagram" aria-hidden="true">
+                <span>Geometry</span>
+                <span>Boundary Setup</span>
+                <span>Hydraulic Solve</span>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <span class="card-kicker">05</span>
+              <h3>Results Visualization</h3>
+              <p>
+                Review model outcomes through charts, profiles, and focused screen layouts that
+                help teams interpret results without clutter.
+              </p>
+              <img src="assets/results.jpeg" alt="WaRee11 results visualization screen" />
+            </article>
+
+            <article class="feature-card">
+              <span class="card-kicker">06</span>
+              <h3>Scenario Comparison and Diagnostics</h3>
+              <p>
+                Compare runs, inspect differences, and use diagnostics-friendly layouts to support
+                design review, education, and early-stage water resources studies.
+              </p>
+              <div class="diagnostic-list" aria-hidden="true">
+                <span>Scenario A</span>
+                <span>Scenario B</span>
+                <span>Delta Review</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section-pad soft-section">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">Workflow</p>
+            <h2>Five steps from project setup to hydraulic interpretation</h2>
+            <p>
+              The product story is designed to be easy to present, easy to teach, and easy to
+              follow during collaboration or investor demonstrations.
+            </p>
+          </div>
+
+          <div class="workflow-grid">
+            <article class="workflow-card">
+              <span>01</span>
+              <h3>Create Project</h3>
+              <p>Start with a clean project structure for river study setup, organization, and review.</p>
+            </article>
+            <article class="workflow-card">
+              <span>02</span>
+              <h3>Build River Network</h3>
+              <p>Lay out reaches and system connectivity with a visual network-building interface.</p>
+            </article>
+            <article class="workflow-card">
+              <span>03</span>
+              <h3>Define Cross Sections</h3>
+              <p>Input and inspect section geometry in a touch-friendly editor suitable for learning.</p>
+            </article>
+            <article class="workflow-card">
+              <span>04</span>
+              <h3>Configure Simulation</h3>
+              <p>Set runtime parameters and prepare the model for hydraulic computation.</p>
+            </article>
+            <article class="workflow-card">
+              <span>05</span>
+              <h3>Run and Analyze Results</h3>
+              <p>Review outputs, compare scenarios, and present findings with clearer visual context.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="use-cases" class="section-pad">
+        <div class="container">
+          <div class="section-intro">
+            <p class="eyebrow">Use cases</p>
+            <h2>Built for teaching, training, and applied hydraulic research</h2>
+          </div>
+
+          <div class="use-case-grid">
+            <article class="use-case-card">
+              <h3>University teaching</h3>
+              <p>Support river engineering instruction with a more approachable modeling interface.</p>
+            </article>
+            <article class="use-case-card">
+              <h3>Hydraulic engineering training</h3>
+              <p>Help trainees understand project setup, model components, and hydraulic interpretation.</p>
+            </article>
+            <article class="use-case-card">
+              <h3>River modeling research</h3>
+              <p>Enable collaborative review across students, researchers, and domain specialists.</p>
+            </article>
+            <article class="use-case-card">
+              <h3>Scenario comparison</h3>
+              <p>Present alternatives clearly for diagnostics, iteration, and team discussion.</p>
+            </article>
+            <article class="use-case-card">
+              <h3>Early-stage flood and water resources study</h3>
+              <p>Frame initial analyses in a portable, presentation-ready environment.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="collaboration" class="section-pad">
+        <div class="container">
+          <div class="collaboration-panel">
+            <div class="collaboration-copy">
+              <p class="eyebrow">Collaboration</p>
+              <h2>Looking for academic and engineering collaborators</h2>
+              <p>
+                WaRee11 is currently under active development and welcomes collaboration with
+                universities, water resources engineers, and researchers.
+              </p>
+            </div>
+            <a class="button button-primary" href="#contact">Contact WaRee11 Team</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>WaRee11</h2>
+          <p>Built by Irrigation Innovation of Thailand</p>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:contact@waree11.com">contact@waree11.com</a></li>
+            <li><a href="#">Join TestFlight</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
