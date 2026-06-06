@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WaRee11 | Modern River Simulation for iPad</title>
+  <meta
+    name="description"
+    content="WaRee11 is an iPadOS hydraulic modeling experience for building, visualizing, and analyzing river simulation models."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="WaRee11 home">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/app-icon.jpeg" alt="" class="brand-icon" />
+          </span>
+          <span class="brand-name">WaRee11</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#product">Product</a>
+          <a href="#documentation">Documentation</a>
+          <a href="#contact">Contact</a>
+          <a class="button button-primary nav-cta" href="#contact">Join TestFlight</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section id="product" class="hero">
+        <div class="container hero-shell">
+          <div class="hero-copy">
+            <p class="hero-label">iPadOS Hydraulic Modeling</p>
+            <h1>Modern River Simulation for iPad</h1>
+            <p class="hero-subtitle">
+              Build, visualize, and analyze river simulation models with a clean iPadOS workflow.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">Join TestFlight</a>
+              <a class="button button-secondary" href="#documentation">View Documentation</a>
+            </div>
+          </div>
+
+          <div class="product-demo">
+            <div class="demo-tabs-wrap">
+              <div class="demo-tabs" role="tablist" aria-label="WaRee11 screenshots">
+                <button
+                  id="tab-project-preview"
+                  class="demo-tab is-active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="panel-project-preview"
+                  tabindex="0"
+                  data-panel="project-preview"
+                >
+                  Project Preview
+                </button>
+                <button
+                  id="tab-river-network"
+                  class="demo-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="panel-river-network"
+                  tabindex="-1"
+                  data-panel="river-network"
+                >
+                  River Network
+                </button>
+                <button
+                  id="tab-cross-sections"
+                  class="demo-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="panel-cross-sections"
+                  tabindex="-1"
+                  data-panel="cross-sections"
+                >
+                  Cross Sections
+                </button>
+                <button
+                  id="tab-simulation-settings"
+                  class="demo-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="panel-simulation-settings"
+                  tabindex="-1"
+                  data-panel="simulation-settings"
+                >
+                  Simulation Settings
+                </button>
+                <button
+                  id="tab-results"
+                  class="demo-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="panel-results"
+                  tabindex="-1"
+                  data-panel="results"
+                >
+                  Results
+                </button>
+              </div>
+              <p class="demo-hint">Scroll inside the iPad to explore the app.</p>
+            </div>
+
+            <div class="ipad-stage">
+              <div class="ipad-device" aria-label="Interactive 13-inch iPad demo of WaRee11">
+                <div class="ipad-camera" aria-hidden="true"></div>
+                <div class="ipad-screen-frame">
+                  <div class="ipad-screen-switcher" id="ipad-screen-switcher">
+                    <section
+                      id="panel-project-preview"
+                      class="screen-panel is-active"
+                      role="tabpanel"
+                      aria-labelledby="tab-project-preview"
+                      tabindex="0"
+                    >
+                      <div class="screen-scroll" data-scroll-panel="project-preview">
+                        <img
+                          src="assets/screens/project-preview.png"
+                          alt="WaRee11 Project Preview screen"
+                          class="screen-image"
+                        />
+                      </div>
+                    </section>
+
+                    <section
+                      id="panel-river-network"
+                      class="screen-panel"
+                      role="tabpanel"
+                      aria-labelledby="tab-river-network"
+                      tabindex="0"
+                      hidden
+                    >
+                      <div class="screen-scroll" data-scroll-panel="river-network">
+                        <img
+                          src="assets/screens/river-network.png"
+                          alt="WaRee11 River Network screen"
+                          class="screen-image"
+                        />
+                      </div>
+                    </section>
+
+                    <section
+                      id="panel-cross-sections"
+                      class="screen-panel"
+                      role="tabpanel"
+                      aria-labelledby="tab-cross-sections"
+                      tabindex="0"
+                      hidden
+                    >
+                      <div class="screen-scroll" data-scroll-panel="cross-sections">
+                        <img
+                          src="assets/screens/cross-sections.png"
+                          alt="WaRee11 Cross Sections screen"
+                          class="screen-image"
+                        />
+                      </div>
+                    </section>
+
+                    <section
+                      id="panel-simulation-settings"
+                      class="screen-panel"
+                      role="tabpanel"
+                      aria-labelledby="tab-simulation-settings"
+                      tabindex="0"
+                      hidden
+                    >
+                      <div class="screen-scroll" data-scroll-panel="simulation-settings">
+                        <img
+                          src="assets/screens/simulation-settings.png"
+                          alt="WaRee11 Simulation Settings screen"
+                          class="screen-image"
+                        />
+                      </div>
+                    </section>
+
+                    <section
+                      id="panel-results"
+                      class="screen-panel"
+                      role="tabpanel"
+                      aria-labelledby="tab-results"
+                      tabindex="0"
+                      hidden
+                    >
+                      <div class="screen-scroll" data-scroll-panel="results">
+                        <img
+                          src="assets/screens/results.png"
+                          alt="WaRee11 Results screen"
+                          class="screen-image"
+                        />
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-strip">
+              <div id="research" class="info-card">
+                <span class="info-label">Research</span>
+                <p>Documentation and product materials for river simulation teaching, engineering review, and applied hydraulic research.</p>
+              </div>
+              <div id="contact" class="info-card">
+                <span class="info-label">Contact</span>
+                <p>Join the TestFlight preview to evaluate WaRee11 with your students, project teams, or research collaborators.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="documentation" class="documentation-section">
+        <div class="container">
+          <div class="documentation-header">
+            <p class="hero-label">Documentation</p>
+            <h2>Reference material for testing, teaching, and technical review.</h2>
+            <p class="documentation-copy">
+              Open the latest WaRee11 draft manuals for product onboarding and hydraulic model reference work.
+            </p>
+          </div>
+
+          <div class="documentation-grid">
+            <article class="doc-card">
+              <div class="doc-card-copy">
+                <span class="doc-kicker">User Manual</span>
+                <h3>WaRee11 v1.5 User Manual</h3>
+                <p>
+                  A guided draft manual covering core WaRee11 workflows, app navigation, and model setup for new users.
+                </p>
+              </div>
+              <a
+                class="button button-secondary doc-button"
+                href="assets/docs/WaRee11_v1_5_User_Manual_Draft.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                Open PDF
+              </a>
+            </article>
+
+            <article class="doc-card">
+              <div class="doc-card-copy">
+                <span class="doc-kicker">Technical Reference</span>
+                <h3>WaRee11 v1.55 Technical Reference Manual</h3>
+                <p>
+                  A draft technical reference focused on hydraulic modeling details, configuration guidance, and engineering review context.
+                </p>
+              </div>
+              <a
+                class="button button-secondary doc-button"
+                href="assets/docs/WaRee11_v1_55_Reference_Draft.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                Open PDF
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Built for education · hydraulic engineering · research collaboration</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
